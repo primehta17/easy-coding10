@@ -1,17 +1,17 @@
-//valid parenthesis
-//json database crud nodejs
-//protocol
-//udp,ip,one more
-//ram is faster than rom
-//networking
-//types of api
-//why you used technology not others
-//cpu or apu difference
-// how to improve api performance
-// sql query optimization
-//merge timecomplexity average, 
-//data query how to formed like case, which table what column
+//write a function to calculate the digit distance between two numbers
 
+function calculateDigitDistance(num1, num2) {
+    let sum=0;
+     num1=num1+"",num2=num2+""
+    for(let i=0;i<num1.length;i++){
+            if(num1[i] && num2[i]){
+                sum+=   num1[i]-num2[i];
+            }
+    }
+ 
+    return Math.abs(sum);
+}
+console.log(calculateDigitDistance("123", "256"));
 
 
 
